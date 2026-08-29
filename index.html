@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ================= SEO ================= -->
+
+    <title>Akshay M Prajapati | Coder, Hunter & Developer</title>
+
+    <meta name="description"
+          content="Akshay M Prajapati is a Coder, Hunter and Developer interested in cybersecurity, web development, programming and technology.">
+
+    <meta name="keywords"
+          content="Akshay M Prajapati, Akshay Prajapati, Coder, Developer, Cybersecurity, Web Developer, Programmer">
+
+    <meta name="author" content="Akshay M Prajapati">
+
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+
+    <meta property="og:title"
+          content="Akshay M Prajapati | Coder, Hunter & Developer">
+
+    <meta property="og:description"
+          content="Official personal website of Akshay M Prajapati — Coder, Hunter and Developer.">
+
+    <meta property="og:type" content="website">
+
+    <!--
+    IMPORTANT:
+    After publishing your website, replace this with your real URL.
+    Example:
+    https://yourusername.github.io/
+    -->
+
+    <meta property="og:url"
+          content="https://yourusername.github.io/">
+
+    <!-- ================= PERSON SCHEMA ================= -->
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+
+      "name": "Akshay M Prajapati",
+
+      "alternateName": [
+        "Akshay Prajapati",
+        "Akshay M. Prajapati"
+      ],
+
+      "jobTitle": "Coder, Hunter and Developer",
+
+      "description": "Coder, Hunter and Developer interested in cybersecurity, programming, web development and technology.",
+
+      "url": "https://yourusername.github.io/",
+
+      "sameAs": [
+        "https://github.com/YOUR_GITHUB_USERNAME",
+        "https://www.instagram.com/YOUR_INSTAGRAM_USERNAME/",
+        "https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME/"
+      ]
+    }
+    </script>
+
+    <!-- ================= STYLE ================= -->
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #050505;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        /* ================= NAVBAR ================= */
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 999;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 18px 8%;
+
+            background: rgba(5,5,5,0.85);
+            backdrop-filter: blur(15px);
+
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: #00ff88;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        nav ul li a {
+            color: #cccccc;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #00ff88;
+        }
+
+        /* ================= HERO ================= */
+
+        .hero {
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            text-align: center;
+
+            padding: 120px 20px 60px;
+
+            background:
+                radial-gradient(circle at center,
+                rgba(0,255,136,0.12),
+                transparent 40%);
+        }
+
+        .hero-content {
+            max-width: 850px;
+        }
+
+        .badge {
+            display: inline-block;
+
+            padding: 8px 18px;
+
+            border: 1px solid rgba(0,255,136,0.5);
+            border-radius: 50px;
+
+            color: #00ff88;
+
+            margin-bottom: 25px;
+
+            font-size: 14px;
+        }
+
+        .hero h1 {
+            font-size: clamp(45px, 8vw, 90px);
+
+            line-height: 1.05;
+
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #00ff88;
+        }
+
+        .hero h2 {
+            color: #cccccc;
+
+            font-size: clamp(20px, 3vw, 32px);
+
+            font-weight: normal;
+
+            margin-bottom: 25px;
+        }
+
+        .hero p {
+            color: #999999;
+
+            max-width: 650px;
+
+            margin: auto;
+
+            font-size: 17px;
+        }
+
+        .buttons {
+            margin-top: 35px;
+
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 13px 25px;
+
+            border-radius: 8px;
+
+            border: 1px solid #00ff88;
+
+            transition: 0.3s;
+
+            font-weight: bold;
+        }
+
+        .btn.primary {
+            background: #00ff88;
+            color: #000000;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0,255,136,0.2);
+        }
+
+        /* ================= SECTIONS ================= */
+
+        section {
+            padding: 100px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .section-title span {
+            color: #00ff88;
+        }
+
+        .section-title p {
+            color: #888888;
+        }
+
+        /* ================= ABOUT ================= */
+
+        .about {
+            max-width: 900px;
+
+            margin: auto;
+
+            text-align: center;
+        }
+
+        .about p {
+            color: #aaaaaa;
+
+            font-size: 18px;
+
+            margin-bottom: 20px;
+        }
+
+        /* ================= SKILLS ================= */
+
+        .skills-grid {
+            max-width: 1000px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(auto-fit, minmax(180px, 1fr));
+
+            gap: 20px;
+        }
+
+        .skill {
+            padding: 25px;
+
+            text-align: center;
+
+            border: 1px solid rgba(255,255,255,0.08);
+
+            background: #0d0d0d;
+
+            border-radius: 12px;
+
+            transition: 0.3s;
+        }
+
+        .skill:hover {
+            transform: translateY(-5px);
+
+            border-color: #00ff88;
+
+            box-shadow:
+                0 10px 30px rgba(0,255,136,0.08);
+        }
+
+        .skill h3 {
+            color: #00ff88;
+            margin-bottom: 8px;
+        }
+
+        .skill p {
+            color: #888888;
+            font-size: 14px;
+        }
+
+        /* ================= PROJECTS ================= */
+
+        .projects {
+            max-width: 1100px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(auto-fit, minmax(260px, 1fr));
+
+            gap: 25px;
+        }
+
+        .project {
+            padding: 30px;
+
+            background: #0d0d0d;
+
+            border: 1px solid rgba(255,255,255,0.08);
+
+            border-radius: 15px;
+
+            transition: 0.3s;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+
+            border-color: #00ff88;
+        }
+
+        .project h3 {
+            margin-bottom: 12px;
+
+            color: #00ff88;
+        }
+
+        .project p {
+            color: #888888;
+        }
+
+        /* ================= SOCIAL ================= */
+
+        .social {
+            display: flex;
+
+            justify-content: center;
+
+            flex-wrap: wrap;
+
+            gap: 15px;
+        }
+
+        .social a {
+            padding: 12px 22px;
+
+            border: 1px solid rgba(255,255,255,0.12);
+
+            border-radius: 8px;
+
+            color: #cccccc;
+
+            transition: 0.3s;
+        }
+
+        .social a:hover {
+            border-color: #00ff88;
+
+            color: #00ff88;
+        }
+
+        /* ================= FOOTER ================= */
+
+        footer {
+            text-align: center;
+
+            padding: 30px;
+
+            border-top: 1px solid rgba(255,255,255,0.08);
+
+            color: #666666;
+        }
+
+        footer strong {
+            color: #00ff88;
+        }
+
+        /* ================= MOBILE ================= */
+
+        @media(max-width: 700px) {
+
+            nav {
+                padding: 15px 5%;
+            }
+
+            nav ul {
+                gap: 12px;
+                font-size: 13px;
+            }
+
+            section {
+                padding: 75px 5%;
+            }
+
+            .hero {
+                padding-top: 130px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<nav>
+
+    <div class="logo">
+        Akshay<span>.</span>
+    </div>
+
+    <ul>
+
+        <li>
+            <a href="#about">About</a>
+        </li>
+
+        <li>
+            <a href="#skills">Skills</a>
+        </li>
+
+        <li>
+            <a href="#projects">Projects</a>
+        </li>
+
+        <li>
+            <a href="#contact">Contact</a>
+        </li>
+
+    </ul>
+
+</nav>
+
+
+<!-- ================= HERO ================= -->
+
+<header class="hero">
+
+    <div class="hero-content">
+
+        <div class="badge">
+            Available for Projects
+        </div>
+
+        <h1>
+            Akshay M <span>Prajapati</span>
+        </h1>
+
+        <h2>
+            Coder / Hunter And Developer
+        </h2>
+
+        <p>
+            Cybersecurity enthusiast, coder and developer
+            passionate about technology, programming,
+            web development and building innovative projects.
+        </p>
+
+        <div class="buttons">
+
+            <a href="#projects"
+               class="btn primary">
+                View Projects
+            </a>
+
+            <a href="#contact"
+               class="btn">
+                Contact Me
+            </a>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about">
+
+    <div class="section-title">
+
+        <h2>
+            About <span>Me</span>
+        </h2>
+
+        <p>
+            Who I am
+        </p>
+
+    </div>
+
+
+    <div class="about">
+
+        <p>
+            I am <strong>Akshay M Prajapati</strong>,
+            a Coder, Hunter and Developer interested
+            in cybersecurity, programming and technology.
+        </p>
+
+        <p>
+            My goal is to continuously learn new technologies,
+            create useful projects and improve my skills
+            in the world of cybersecurity and software development.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SKILLS ================= -->
+
+<section id="skills">
+
+    <div class="section-title">
+
+        <h2>
+            My <span>Skills</span>
+        </h2>
+
+        <p>
+            Technologies and areas I am learning
+        </p>
+
+    </div>
+
+
+    <div class="skills-grid">
+
+        <div class="skill">
+
+            <h3>
+                HTML
+            </h3>
+
+            <p>
+                Web Structure
+            </p>
+
+        </div>
+
+
+        <div class="skill">
+
+            <h3>
+                CSS
+            </h3>
+
+            <p>
+                Web Design
+            </p>
+
+        </div>
+
+
+        <div class="skill">
+
+            <h3>
+                JavaScript
+            </h3>
+
+            <p>
+                Web Programming
+            </p>
+
+        </div>
+
+
+        <div class="skill">
+
+            <h3>
+                Python
+            </h3>
+
+            <p>
+                Programming
+            </p>
+
+        </div>
+
+
+        <div class="skill">
+
+            <h3>
+                Cybersecurity
+            </h3>
+
+            <p>
+                Security & Learning
+            </p>
+
+        </div>
+
+
+        <div class="skill">
+
+            <h3>
+                GitHub
+            </h3>
+
+            <p>
+                Code & Projects
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PROJECTS ================= -->
+
+<section id="projects">
+
+    <div class="section-title">
+
+        <h2>
+            My <span>Projects</span>
+        </h2>
+
+        <p>
+            Things I build and experiment with
+        </p>
+
+    </div>
+
+
+    <div class="projects">
+
+
+        <div class="project">
+
+            <h3>
+                Web Development
+            </h3>
+
+            <p>
+                Modern responsive websites
+                using HTML, CSS and JavaScript.
+            </p>
+
+        </div>
+
+
+        <div class="project">
+
+            <h3>
+                Cybersecurity Learning
+            </h3>
+
+            <p>
+                Learning cybersecurity concepts,
+                security tools and ethical security practices.
+            </p>
+
+        </div>
+
+
+        <div class="project">
+
+            <h3>
+                Coding Projects
+            </h3>
+
+            <p>
+                Experimental coding projects
+                and technology experiments.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact">
+
+    <div class="section-title">
+
+        <h2>
+            Find <span>Me</span>
+        </h2>
+
+        <p>
+            Connect with me online
+        </p>
+
+    </div>
+
+
+    <div class="social">
+
+        <!-- Replace these links with your real profiles -->
+
+
+        <a href="https://github.com/YOUR_GITHUB_USERNAME"
+           target="_blank">
+
+            GitHub
+
+        </a>
+
+
+        <a href="https://www.instagram.com/akshay_prajapati_5_6_7/"
+           target="_blank">
+
+            Instagram
+
+        </a>
+
+
+        <a href="https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME/"
+           target="_blank">
+
+            LinkedIn
+
+        </a>
+
+
+        <a href="mailto:YOUR_EMAIL@example.com">
+
+            Email
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    © 2026
+    <strong>
+        Akshay M Prajapati
+    </strong>
+
+    — Coder / Hunter And Developer
+
+</footer>
+
+
+</body>
+</html>
