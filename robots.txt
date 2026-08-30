@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://akshayprajapati1.github.io/Google-search-/sitemap.xml
